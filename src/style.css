@@ -7,8 +7,9 @@ body {
     opacity: 100%;
     width: "100%";
     font-family: "Cinzel";
-    color: white;
-
+    color: white; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 *::-webkit-scrollbar {
