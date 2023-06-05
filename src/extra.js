@@ -82,9 +82,5 @@ export function translateFamily(family) {
 
   };
 
-  if (translations.hasOwn(family)) {
-    return translations[family];
-  } else {
-    return family;
-  }
+  return translations[family] ? translations[family] : family;
 }
