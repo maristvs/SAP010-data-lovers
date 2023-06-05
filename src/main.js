@@ -1,4 +1,4 @@
-import { filterCharactersByFamily, calculateFamilyPercentage } from './data.js';
+import dataHandler from './data.js';
 import { translateTitle, translateFamily } from './extra.js';
 import characters from "./data/got/got.js";
 
@@ -73,15 +73,9 @@ searchInput.addEventListener("input", () => {
   showCharacterCards(filteredCharacters);
 });
 
-// Filtro por título
-filterByTitle.addEventListener("click", () => {
-  const filteredCharacters = characters.got.sort((a, b) => a.title.localeCompare(b.title));
-  showCharacterCards(filteredCharacters);
-});
-
 // Função para exibir a mensagem com a porcentagem da família selecionada
 function showFamilyPercentage(filteredCharacters) {
-  const percentage = calculateFamilyPercentage(filteredCharacters, characters.got);
+  const percentage = dataHandler.calculateFamilyPercentage(characters.got, filteredCharacters);
   const message = `A família selecionada possui ${percentage}% dos personagens.`;
   percentageElement.textContent = message;
 }
@@ -93,7 +87,7 @@ filterByFamily.addEventListener("change", () => {
     showCharacterCards(characters.got);
     percentageElement.textContent = ""; // Limpa a mensagem de porcentagem
   } else {
-    const filteredCharacters = filterCharactersByFamily(characters.got, selectedFamily);
+    const filteredCharacters = dataHandler.filterCharactersByFamily(characters.got, selectedFamily);
     showCharacterCards(filteredCharacters);
     showFamilyPercentage(filteredCharacters);
   }
@@ -102,11 +96,7 @@ filterByFamily.addEventListener("change", () => {
 // Ordenando de A-Z
 orderByname.addEventListener("change", () => {
   const selectedOrder = orderByname.value;
-  if (selectedOrder === "a-z") {
-    const orderedCharacters = characters.got.sort((a, b) => a.fullName.localeCompare(b.fullName));
-    showCharacterCards(orderedCharacters);
-  } else if (selectedOrder === "z-a") {
-    const orderedCharacters = characters.got.sort((a, b) => b.fullName.localeCompare(a.fullName));
-    showCharacterCards(orderedCharacters);
-  }
+  let sortType = selectedOrder === "a-z" ? 'ASC' : 'DESC';
+  const orderedCharacters = dataHandler.sortCharacters(characters.got, sortType);
+  showCharacterCards(orderedCharacters);
 });
