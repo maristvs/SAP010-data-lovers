@@ -1,18 +1,6 @@
-import { example, anotherExample } from '../src/data.js';
 
-
-describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
-  });
-
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
-  });
-});
-
-
-describe('anotherExample', () => {
+import  data  from '../src/data';
+/*describe('anotherExample', () => {
   it('is a function', () => {
     expect(typeof anotherExample).toBe('function');
   });
@@ -20,4 +8,16 @@ describe('anotherExample', () => {
   it('returns `anotherExample`', () => {
     expect(anotherExample()).toBe('OMG');
   });
+}); */
+
+describe('dataGot', () => {
+  it('filterCharactersByFamily is a function', () => {
+    expect(typeof data.filterCharactersByFamily === 'function').toEqual(true);
+  });
+
+  // it('returns `example`', () => {
+  //   expect(example()).toBe('example');
+  // });
 });
+
+
