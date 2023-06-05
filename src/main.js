@@ -93,7 +93,7 @@ filterByFamily.addEventListener("change", () => {
     showCharacterCards(characters.got);
     percentageElement.textContent = ""; // Limpa a mensagem de porcentagem
   } else {
-    const filteredCharacters = characters.got.filter(character => character.family === selectedFamily);
+    const filteredCharacters = filterCharactersByFamily(characters.got, selectedFamily);
     showCharacterCards(filteredCharacters);
     showFamilyPercentage(filteredCharacters);
   }
