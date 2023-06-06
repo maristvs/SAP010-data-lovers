@@ -75,11 +75,6 @@ body {
     border: 0;
 }
 
-#button-watch-serie:hover {
-    cursor: pointer;
-    background: #B8F099;
-}
-
 .search-box {
     background: #ECEFF1;
     height: 40px;
@@ -92,7 +87,7 @@ body {
     float: right;
     width: 40px;
     height: 40px;
-    border-radius: 50%;
+    border-radius: 40%;
     background: #ECEFF1;
     display: flex;
     justify-content: center;
@@ -140,14 +135,14 @@ body {
 }
 
 .menu {
-    background: rgba(0, 0, 0, 0.7);
+    background: black;
     width: 350px;
-    position: absolute;
-    top: -90px;
+    position: fixed;
+    top: 120px;
     display: flex;
     justify-content: start;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     display: none;
     z-index: 1000;
     height: 500px;
@@ -158,71 +153,41 @@ body {
     margin-top: -70px;
     font-size: 28px;
     margin-right: 25px;
-    position: absolute;
+    position: fixed;
     z-index: 1000;
 }
 
-.menu-item,
-.menu-container a {
+
+.menu-extra {
     text-transform: uppercase;
     text-decoration: none;
-    font-weight: bold;
-    font-size: 15px;
+    font-size: 17px;
     color: white;
+    margin-left: 40px;
+    padding: 10px;
 }
 
-.menu-item {
-    padding-top: 20px;
-}
-
-.menu-container a:hover {
-    color: #00B5CC;
-}
-
-.menu-container ul {
-    list-style: none;
-}
-
-.menu-container li {
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 20px;
-    text-align: center;
-}
-
-.menu-sub-item {
-    padding-top: 20px;
-}
-
-.menu-container li a {
-    font-weight: normal;
+.ul-list {
+    list-style-type: none;
+    margin-bottom: 100px;
+    margin-top: 45px;
     font-size: 20px;
 }
 
 select {
     background-color: white;
-    border-radius: 30px;
+    border-radius: 15px;
+    font-family: 'Cinzel', serif;
     font-size: 15px;
-    font-family: 'Roboto', sans-serif;
-    padding: 10px;
-    border: none;
-    appearance: none;
-    text-align: center;
+    font-weight: 600;
+    padding: 5px;
+    width: 200px;
+    border: black;
+    appearance: reverse;
+    text-align: left;
     text-transform: uppercase;
-}
-
-#filter-by-title {
-    background-color: white;
-    border-radius: 30px;
-    font-size: 15px;
-    font-family: 'Roboto', sans-serif;
-    padding: 10px;
-    border: none;
-    appearance: none;
-    text-align: center;
-    text-transform: uppercase;
-    color: #000000;
-
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .fa-lg {
@@ -230,6 +195,8 @@ select {
     line-height: 10.05em;
     vertical-align: -0.075em;
 }
+
+/*Fim da formatação do menu */
 
 .page-title {
     font-size: 25px;

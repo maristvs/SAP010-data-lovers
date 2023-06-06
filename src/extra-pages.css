@@ -178,7 +178,8 @@ body {
 }
 
 .series-description {
-    background-color: rgba(0, 0, 0, 0.7);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 60);
+    font-weight: bold;
     margin-left: 50px;
     margin-right: 50px;
     text-align: center;
