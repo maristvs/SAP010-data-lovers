@@ -97,7 +97,7 @@ filterByFamily.addEventListener("change", () => {
 // Ordenando de A-Z
 orderByname.addEventListener("change", () => {
   const selectedOrder = orderByname.value;
-  let sortType = selectedOrder === "a-z" ? 'ASC' : 'DESC';
+  const sortType = selectedOrder === "a-z" ? 'ASC' : 'DESC';
   const orderedCharacters = dataHandler.sortCharacters(characters.got, sortType);
   showCharacterCards(orderedCharacters);
 });
