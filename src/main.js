@@ -61,15 +61,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Selecionando elementos do DOM
 const searchInput = document.querySelector("#search-input");
-const filterByTitle = document.querySelector("#filter-by-title");
 const filterByFamily = document.querySelector("#filter-by-family");
 const orderByname = document.querySelector("#order-by-name");
 const percentageElement = document.getElementById("familyPercentage");
 
 // Manipulação de eventos
+
+//Função de pesquisar por nome
 searchInput.addEventListener("input", () => {
   const searchTerm = searchInput.value.toLowerCase();
-  const filteredCharacters = characters.got.filter(character => character.fullName.toLowerCase().includes(searchTerm));
+  const filteredCharacters = dataHandler.searchName(characters.got, searchTerm);
   showCharacterCards(filteredCharacters);
 });
 
