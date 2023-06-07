@@ -1,7 +1,6 @@
 
 import dataHandler from '../src/data.js';
 import charactersMock from './charactersgotmock.js';
-//import characters from "../src/data/got/got.js";
 
 /*describe('anotherExample', () => {
   it('is a function', () => {
@@ -35,7 +34,7 @@ describe('filterCharactersByFamily', () => {
     expect(filteredChars.length).toBe(10);
     for (let i = 0; i < filteredChars.length; i++) {
       const element = filteredChars[i];
-      //Elemento do array deve ser da familia Bronn
+      //Elemento do array deve ser da familia Stark
       expect(element.family).toBe('House Stark');
     }
   });
@@ -54,49 +53,43 @@ describe('calculateFamilyPercentage', () => {
     expect(typeof dataHandler.calculateFamilyPercentage === 'function').toEqual(true);
   });
 
-  /*it('When I filter by the Bronn family, I expect to get 1.89%', () => {
+  it('When I filter by the Bronn family, I expect to get 5.56%', () => {
     const filteredChars = dataHandler.filterCharactersByFamily(charactersMock, 'Bronn');
     const percentage = dataHandler.calculateFamilyPercentage(charactersMock, filteredChars);
-    expect(percentage).toBe('1.89');
+    expect(percentage).toBe('5.56');
   });
 
-  it('When I filter by the Stark family, I expect to get %', () => {
+  it('When I filter by the Stark family, I expect to get 55.56%', () => {
     const filteredChars = dataHandler.filterCharactersByFamily(charactersMock, 'House Stark');
     const percentage = dataHandler.calculateFamilyPercentage(charactersMock, filteredChars);
-    expect(percentage).toBe('18.87');
+    expect(percentage).toBe('55.56');
   });
-*/
 });
 
 describe('searchName', () => {
   it('searchName is a function', () => {
     expect(typeof dataHandler.searchName === 'function').toEqual(true);
   });
-  const charactersArray = [
-    { fullName: 'Samwell Tarly', lastName: 'Tarly', firstName: 'Samwell' },
-    { fullName: 'Jon Snow', lastName: 'Snow', firstName: 'Jon' },
-    { fullName: 'Arya Stark', lastName: 'Stark', firstName: 'Arya' },
-  ];
-
+  
   it('When no matching names are found it should return an empty array', () => {
-    const result = dataHandler.searchName(charactersArray, 'Michael');
+    const result = dataHandler.searchName(charactersMock, 'Michael');
     expect(result).toEqual([]);
   });
 
   it('When matching names are found it should return an array with matching names (case-insensitive)', () => {
-    const result1 = dataHandler.searchName(charactersArray, 'samwell');
+    const result1 = dataHandler.searchName(charactersMock, 'samwell');
     expect(result1).toEqual([
-      { fullName: 'Samwell Tarly', lastName: 'Tarly', firstName: 'Samwell' },
+      { fullName: 'Samwell Tarly', lastName: 'Tarly', firstName: 'Samwell', id: 1, born: '283 DC', family: 'House Tarly', title: 'Maester', imageUrl: 'https://thronesapi.com/assets/images/sam.jpg' },
     ]);
 
-    const result2 = dataHandler.searchName(charactersArray, 'JON');
+    const result2 = dataHandler.searchName(charactersMock, 'JON');
     expect(result2).toEqual([
-      { fullName: 'Jon Snow', lastName: 'Snow', firstName: 'Jon' },
+      { fullName: 'Jon Snow', lastName: 'Snow', firstName: 'Jon', id: 2, born: '283 DC', family: 'House Stark', title: 'King of the North', imageUrl: 'https://thronesapi.com/assets/images/jon-snow.jpg' },
     ]);
 
-    const result3 = dataHandler.searchName(charactersArray, 'arya');
+    const result3 = dataHandler.searchName(charactersMock, 'arya');
     expect(result3).toEqual([
-      { fullName: 'Arya Stark', lastName: 'Stark', firstName: 'Arya' },
+      { fullName: 'Arya Stark', lastName: 'Stark', firstName: 'Arya', id: 3, born: '289 AL', family: 'House Stark', title: 'No One', imageUrl: 'https://thronesapi.com/assets/images/arya-stark.jpg' },
     ]);
   });
 
@@ -108,12 +101,16 @@ describe('searchName', () => {
     it('When sorting in ascending order, the characters should be sorted alphabetically by full name', () => {
       const sortedChars = dataHandler.sortCharacters(charactersMock, "ASC");
       expect(sortedChars[0].fullName).toEqual("Arya Stark")
+      const lastCharacterIndex = sortedChars.length - 1;
+      expect(sortedChars[lastCharacterIndex].fullName).toEqual("Ygritte");
     });
 
     it('When sorting in descending order, the characters should be sorted alphabetically by full name', () => {
       const sortedChars = dataHandler.sortCharacters(charactersMock, "DESC");
       expect(sortedChars[0].fullName).toEqual("Ygritte")
+      const lastCharacterIndex = sortedChars.length - 1;
+      expect(sortedChars[lastCharacterIndex].fullName).toEqual("Arya Stark");
     });
-  
+
   });
 });
