@@ -1,9 +1,11 @@
 # Data Lovers - Game of Thrones
 
+Segundo projeto realizado pela turma SAP010 da Laboratoria. 
+
 
 <div align="center">
   
-  Acesse o projeto: [aqui](inserir projeto)  
+  Acesse o projeto: [aqui]((https://www.linkedin.com/in/ma%C3%ADra-bergamaschi-aaa8a6139/)  
   <br>
   <img align="center" alt="git" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
   <img align="center" alt="Rafa-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
@@ -16,7 +18,7 @@
   Desenvolvido por 
   <br>
   Maíra Bergamaschi <br> 
-  [Linkedin](inserir aqui) | [Github](https://github.com/mairabergamaschi)
+  [Linkedin](https://www.linkedin.com/in/ma%C3%ADra-bergamaschi-aaa8a6139/) | [Github](https://github.com/mairabergamaschi)
   <br>
   Marianna Esteves A. e Moura <br>
   [Linkedin](https://www.linkedin.com/in/marianna-esteves-43bb6a274/) | [Github](https://github.com/maristvs)
@@ -38,7 +40,7 @@
 
 ## 1. Prefácio
 
-Segundo projeto realizado pela turma SAP010 da Laboratoria. Este trabalho tem como objetivo desevolver uma aplicação web responsiva sobre a série Game of Thrones que possibilita visualizar os personagens, organizá-los em ordem alfabética crescente e decrescente, pesquisar por nome ou sobrenome, e filtrá-los por família. Também é possível encontrar informações como o título do personagem no card e informações sobre a série em uma página anexa. 
+Este trabalho tem como objetivo desevolver uma aplicação web responsiva sobre a série Game of Thrones que possibilita visualizar os personagens, organizá-los em ordem alfabética crescente e decrescente, pesquisar por nome ou sobrenome, e filtrá-los por família. Também é possível encontrar informações como o título do personagem no card e informações sobre a série em uma página anexa. 
  Game of Thrones é uma série de TV produzida pela HBO baseada na obra de George R. R. Martin e tem todos seus direitos autorais reservados.
 
 ***
@@ -53,13 +55,13 @@ Este trabalho foi realizado com o intuito de aplicar as tecnologias abordadas no
 
 Pensando na experiência do usuário, desenvolvemos um produto no formato de Fanpage que permite que a experiência de consultar o elenco de personagens de forma divertida, intuitiva e prática ainda que simples. 
   
-  * Quem são os usuários principais do produto?
+ #### * Quem são os usuários principais do produto?
   Fãs novos e assíduos da série que tem interesse em consultar informações básicas sobre os personagens e suas casas. 
-  * Quais são os objetivos dos usuários com relação ao produto?
+ #### * Quais são os objetivos dos usuários com relação ao produto?
   Acessar informações como o nome completo dos personagens, Casa pertencente, título e ano de nascimento. Além de uma página anexa com o trailer oficial e um botão que direciona para a primeira temporada da série. 
-  * Quais são os dados mais relevantes que querem ver na interface e por quê?
+ #### * Quais são os dados mais relevantes que querem ver na interface e por quê?
   Os dados mais relevantes que os usuários desejam ver na interface são os personagens e a família à qual eles pertencem. Isso se deve ao fato de a série abordar um cenário de disputa política e territorial, tornando indispensável que os usuários possam entender esses conceitos de pertencimento dos personagens.
-  * Quando utilizam ou utilizariam o produto? 
+ #### * Quando utilizam ou utilizariam o produto? 
   Quando quiserem consultar a lista de personagens.
 
 
@@ -77,7 +79,7 @@ Utilizamos a ferramenta Google Keep para o planejamento da logística, bem como 
 
  ***
 
-## 5. Interface
+## 5. Interface Responsiva
 
  Para elaborar o design do aplicativo web, primeiro criamos o protótipo de baixa fidelidade a fim de definir os elementos que seriam usados, bem como um esboço de seu layout em papel sulfite e lápis. 
 
@@ -105,13 +107,20 @@ Utilizamos a ferramenta Google Keep para o planejamento da logística, bem como 
 
   ![aboutus](https://github.com/maristvs/SAP010-data-lovers/assets/131373702/ee419475-6748-49f8-a4d8-6a362baab0de)
 
+ A interface foi trabalhada de forma responsiva para se adaptar a outros tipos de tela além do desktop, deste modo podemos visualizar:
  
+#### Interface para Mobile: 
+ ![mobileprint](https://github.com/maristvs/SAP010-data-lovers/assets/131373702/de6afb60-3bd5-4d4c-83cb-afc439a13b60)
+
+#### Interface para tablets: 
+![tabletprint](https://github.com/maristvs/SAP010-data-lovers/assets/131373702/708dbd1d-f58c-4a8d-9c2d-4e46916357d5)
+
 
 ***
 
 ## 6. Objetivos de aprendizagem e cobertura de testes unitários
 
-  * Uso de Vanilla JavaScript
+  * Uso de Vanilla JavaScript 
   * Uso de HTML semântico
   * Uso de seletores de CSS
   * Uso de filtros baseados em uma condição
@@ -123,8 +132,10 @@ Utilizamos a ferramenta Google Keep para o planejamento da logística, bem como 
   * Documentação README incluindo descrição do produto, histórias de usuário, e interface. 
   * Controle de versionamento colaborativo (Git)
   
-  *Cobertura dos testes: 
-  <foto> 
+  # * Cobertura dos testes: 
+  
+ ![covertests](https://github.com/maristvs/SAP010-data-lovers/assets/131373702/a7c62a0c-1b80-462e-bd5c-29c4e036b56e)
+
 
 ## 7. Especificações Técnicas
 
@@ -150,3 +161,4 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias e ferramentas:
 
 Essas especificações técnicas fornecem a base para o desenvolvimento e funcionamento da aplicação, garantindo uma implementação sólida e eficiente.
   
+
