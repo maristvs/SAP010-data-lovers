@@ -1,7 +1,5 @@
 # Data Lovers - Game of Thrones
 
-Segundo projeto realizado pela turma SAP010 da Laboratoria. 
-
 
 <div align="center">
   
@@ -15,12 +13,12 @@ Segundo projeto realizado pela turma SAP010 da Laboratoria.
   <img align="center" alt="Figma" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" />
   <br>
 
-  Desenvolvido por 
+  Desenvolvido por: 
   <br>
-  Maíra Bergamaschi <br> 
+  #### Maíra Bergamaschi <br> 
   [Linkedin](https://www.linkedin.com/in/ma%C3%ADra-bergamaschi-aaa8a6139/) | [Github](https://github.com/mairabergamaschi)
   <br>
-  Marianna Esteves A. e Moura <br>
+  #### Marianna Esteves A. e Moura <br>
   [Linkedin](https://www.linkedin.com/in/marianna-esteves-43bb6a274/) | [Github](https://github.com/maristvs)
 </div>
  
@@ -32,15 +30,15 @@ Segundo projeto realizado pela turma SAP010 da Laboratoria.
 * [2. Resumo do projeto](#2-resumo-do-projeto)
 * [3. Histórias do Usuário](#3-histórias-do-usuário)
 * [4.Metodologia](#4-metodologia)
-* [5. Interface](#5-interface)
-* [6. Objetivos de Aprendizagem e Cobertura de Testes](#6-objetivos-de-aprendizagem-e-cobertura-de-testes)
+* [5.Interface Responsiva](#5-interface-responsiva)
+* [6. Objetivos de Aprendizagem e Cobertura de Testes Unitários](#6-objetivos-de-aprendizagem-e-cobertura-de-testes-unitários)
 * [7. Especificações Técnicas](#7-especificações-técnicas)
 
 ***
 
 ## 1. Prefácio
 
-Este trabalho tem como objetivo desevolver uma aplicação web responsiva sobre a série Game of Thrones que possibilita visualizar os personagens, organizá-los em ordem alfabética crescente e decrescente, pesquisar por nome ou sobrenome, e filtrá-los por família. Também é possível encontrar informações como o título do personagem no card e informações sobre a série em uma página anexa. 
+ Segundo projeto realizado pela turma SAP010 da Laboratoria. Este trabalho tem como objetivo desevolver uma aplicação web responsiva sobre a série Game of Thrones que possibilita visualizar os personagens, organizá-los em ordem alfabética crescente e decrescente, pesquisar por nome ou sobrenome, e filtrá-los por família. Também é possível encontrar informações como o título do personagem no card e informações sobre a série em uma página anexa. 
  Game of Thrones é uma série de TV produzida pela HBO baseada na obra de George R. R. Martin e tem todos seus direitos autorais reservados.
 
 ***
@@ -132,10 +130,10 @@ Utilizamos a ferramenta Google Keep para o planejamento da logística, bem como 
   * Documentação README incluindo descrição do produto, histórias de usuário, e interface. 
   * Controle de versionamento colaborativo (Git)
   
-  # * Cobertura dos testes: 
+  ###  Cobertura dos testes: 
   
  ![covertests](https://github.com/maristvs/SAP010-data-lovers/assets/131373702/a7c62a0c-1b80-462e-bd5c-29c4e036b56e)
-
+  Cobertura de 100% de statements, functions, lines e branches.
 
 ## 7. Especificações Técnicas
 
