@@ -74,21 +74,25 @@ Utilizamos a ferramenta Google Keep para o planejamento da logística, bem como 
 ## 5. Interface
 
 Para elaborar o design do aplicativo web, primeiro criamos o protótipo de baixa fidelidade a fim de definir os elementos que seriam usados, bem como um esboço de seu layout em papel sulfite e lápis. 
-  (foto)
+  ![prototype](https://github.com/maristvs/SAP010-data-lovers/assets/131373702/23771ef4-71be-44fe-a9cf-725ddee48f5d)
+
   
   A partir deste primeiro esboço, criamos um protótipo de alta fidelidade no Figma, onde definimos quais seriam as cores e imagens utilizadas, bem como a escolha visual dos elementos. 
-  (foto)
-  
   Toda o design foi pensado na experiência de usuário, buscando que este tenha uma sensação de imersão no cenário de Game of Thrones, desde a escolha minuciosa da logo, a imagem de background referenciando Westeros, local onde a série acontece, a escolha das cores que remete à identidade visual da produção. 
+ ![homepage](https://github.com/maristvs/SAP010-data-lovers/assets/131373702/a50fb23e-cc81-453c-94e1-9a4c64cc9831)
   
   Na página inicial, temos a projeção dos cards de personagem com suas informações, um campo de pesquisa para que o usuário busque o personagem pelo nome ou sobrenome, um botão de direcionamento para o site oficial de GoT, e um menu hamburguer acionável que direciona para a página sobre a série, permite que o usuário escolha um filtro for familia, uma ordenação alfabética crescente e/ou descresente e uma página adjacente sobre as desenvolvedoras.
-  (foto)
+![menuopened](https://github.com/maristvs/SAP010-data-lovers/assets/131373702/813314fd-61e2-4e53-8912-d861750841dd)
+
+
   
   Na página sobre a série, podemos ver uma breve descrição sobre a obra e o trailer oficial produzido pela HBO. 
-  (foto)
+  ![aboutgot](https://github.com/maristvs/SAP010-data-lovers/assets/131373702/4be08d82-7a53-4b08-8974-fd8a521f29e4)
+
   
   E por fim, na página sobre as desenvolvedoras, temos uma breve descrição do projeto, apresentação das desenvolvedoras bem como divulgação de redes sociais e tecnologias utilizadas. 
-  (foto)
+  ![aboutus](https://github.com/maristvs/SAP010-data-lovers/assets/131373702/ee419475-6748-49f8-a4d8-6a362baab0de)
+
  
 
 
