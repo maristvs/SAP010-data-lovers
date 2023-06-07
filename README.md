@@ -5,7 +5,7 @@ Segundo projeto realizado pela turma SAP010 da Laboratoria.
 
 <div align="center">
   
-  Acesse o projeto: [aqui]((https://www.linkedin.com/in/ma%C3%ADra-bergamaschi-aaa8a6139/)  
+  Acesse o projeto: [aqui](https://www.linkedin.com/in/ma%C3%ADra-bergamaschi-aaa8a6139/)  
   <br>
   <img align="center" alt="git" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
   <img align="center" alt="Rafa-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
