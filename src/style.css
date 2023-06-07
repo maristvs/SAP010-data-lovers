@@ -2,7 +2,7 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
-    background-image: url(../src/images/background.png);
+    background-image: url(images/background.png);
     background-size: cover;
     opacity: 100%;
     width: "100%";
@@ -225,6 +225,14 @@ select {
     padding-top: 50px;
     padding-bottom: 50px;
     color: white;
+}
+
+@media (max-width: 570px) {
+    .card-container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 #characterContainer {
