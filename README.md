@@ -53,13 +53,13 @@ Este trabalho foi realizado com o intuito de aplicar as tecnologias abordadas no
 
 Pensando na experiência do usuário, desenvolvemos um produto no formato de Fanpage que permite que a experiência de consultar o elenco de personagens de forma divertida, intuitiva e prática ainda que simples. 
   
- #### * Quem são os usuários principais do produto?
+ * ####  Quem são os usuários principais do produto?
   Fãs novos e assíduos da série que tem interesse em consultar informações básicas sobre os personagens e suas casas. 
- #### * Quais são os objetivos dos usuários com relação ao produto?
+ * #### Quais são os objetivos dos usuários com relação ao produto?
   Acessar informações como o nome completo dos personagens, Casa pertencente, título e ano de nascimento. Além de uma página anexa com o trailer oficial e um botão que direciona para a primeira temporada da série. 
- #### * Quais são os dados mais relevantes que querem ver na interface e por quê?
+  * #### Quais são os dados mais relevantes que querem ver na interface e por quê?
   Os dados mais relevantes que os usuários desejam ver na interface são os personagens e a família à qual eles pertencem. Isso se deve ao fato de a série abordar um cenário de disputa política e territorial, tornando indispensável que os usuários possam entender esses conceitos de pertencimento dos personagens.
- #### * Quando utilizam ou utilizariam o produto? 
+  * #### Quando utilizam ou utilizariam o produto? 
   Quando quiserem consultar a lista de personagens.
 
 
